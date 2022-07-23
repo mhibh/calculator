@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: "Digital";
+    src: url('/src/font/digital.TTF');
+}
+
+
+@layer {
+    body {
+        font-family: 'digital';
+        @apply px-5 bg-slate-300;
+    }
+}
+
+.bg {
+    background-image: linear-gradient(to bottom right, #2C8EC6, #422CC6);
+}
+
+.active-trade {
+    background-image: linear-gradient(to bottom right, #EDA767, #E96868);
+}
+
+/* .active-trade {
+    @apply text-white shadow-md bg-gradient-to-r from-[#F43A3A] to-[#422CC6]
+} */

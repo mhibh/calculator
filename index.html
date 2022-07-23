@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="calculator" class="md:mt-20 mx-auto container bg rounded-xl md:max-w-[400px]">
+        <div class="mx-auto pt-10 w-full">
+            <div class="heading flex flex-wrap justify-center">
+                <div class="w-full flex justify-center text-xl text-white text-left ">
+                    <div class="bg-slate-200 h-20 w-full mx-10 rounded-lg">
+                        <h1 class="showCount text-center mt-5 text-2xl text-red-500">0</h1>
+                    </div>
+                </div>
+                <div class="mx-auto flex justify-center my-3">
+                    <button id="long" class="py-2 px-10 mx-4 text-sm text-white bg-red-600 rounded-xl">Long</button>
+                    <button id="short" class="py-2 px-10 mx-4 text-sm text-white bg-slate-200 rounded-xl">Short</button>
+                </div>
+            </div>
+
+            <div class="max-auto flex justify-center">
+                <div class="text-center mb-3">
+                    <div class="text-white text-lg">Equity</div>
+                    <input id="equity" type="text" class="rounded-lg text-center shadow-md bg-slate-300 my-3" value="">
+                    <div class="text-white text-lg">Entry</div>
+                    <input id="entry" type="text" class="rounded-lg text-center shadow-md bg-slate-300 my-3" value="">
+                    <div class="text-white text-lg">Exit</div>
+                    <input id="exit" type="text" class="rounded-lg text-center shadow-md bg-slate-300 my-3" value="">
+                    <div class="text-white text-lg">leverage</div>
+                    <input id="leverage" type="text" class="rounded-lg text-center shadow-md bg-slate-300 my-3"
+                        value="">
+
+                </div>
+            </div>
+
+            <div id="hitung" class="flex justify-center">
+                <button id="hitung"
+                    class="mx-auto px-10 py-2 bg-red-600 rounded-full text-white shadow-sm mb-3">Hitung</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="/src/app.js"></script>
+</body>
+
+</html>
